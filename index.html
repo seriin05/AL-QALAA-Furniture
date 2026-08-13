@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AL-QALAA-Furniture</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" href="./assets/css.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -12,31 +12,52 @@
 <body>
 
 
-<header>
-  <div class="header-container">
+<header class="py-2 bg-transparent">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container header-container">
+      
+     
+      <a class="navbar-brand al-qalaa-logo m-0" href="#">
+        <img src="./assets/images/logo.jpg" style="border-radius: 10px; " alt="مفروشات القلعة">
+      </a>
 
-    <div class="al-qalaa-logo">
-      <img src="./assets/images/logo.jpg" height="500px" style="border-radius: 10px;" alt="al-qalaa-logo">
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+        <ul class="navbar-nav nav-links gap-lg-4 text-center mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " href="#home">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">من نحن؟</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">الخدمات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">صور</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">تواصل معنا</a>
+          </li>
+        </ul>
+      </div>
+
     </div>
-    <ul class="nav-links">
-      <li><a href="" >الرئيسية</a></li>
-      <li><a href="">من نحن؟</a></li>
-      <li><a href="">الخدمات</a></li>
-      <li><a href="#products">مفروشاتنا</a></li>
-      <li><a href="#footer">تواصل معنا</a></li>
-    </ul>
-  </div>
+  </nav>
 </header>
 
 
-<section class="hero-section py-5">
+<section class="hero-section py-5" id="home">
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       
   
       <div class="col-lg-6 text-end animate-text">
-        <h1 class="display-5 fw-bold Amiri-font" style="color: antiquewhite;">عالم من الفخامة والراحة لمنزلك</h1>
-        <p class="fs-5 Playfair-font" style="color: black;">Al Qalaa Home Furniture & Decor</p>
+        <h1 class="display-5 fw-bold " style="color: antiquewhite;">Al QALAA Furniture</h1>
+        <p class="fs-5 Playfair-font" style="color: antiquewhite;">عالم من الفخامة والراحة لمنزلك</p>
         <p class="lead" style="color: antiquewhite;">نقدم لكم أرقى موديلات الأثاث المنزلي...</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <a href="#products" class="btn btn-success px-4" style="background-color: antiquewhite; color: black;">تصفح المنتجات</a>
@@ -44,9 +65,9 @@
         </div>
       </div>
 
-      <div class="col-10 col-sm-8 col-lg-6 animate-img">
-        <img src="./assets/images/hero.jpg" class="d-block mx-lg-auto img-fluid rounded-3 shadow" alt="مفروشات القلعة">
-      </div>
+<div class="col-12 col-lg-6 d-flex justify-content-center align-items-center text-center mt-4 mt-lg-0 animate-img">
+    <img src="./assets/images/hero.jpg" class="img-fluid rounded-4 shadow mx-auto d-block" alt="...">
+</div>
 
     </div>
   </div>
@@ -219,26 +240,24 @@
 
 
 
-
-<footer class="bg-dark text-white pt-5 pb-3 Amiri-font">
-    <div class="container text-end"> 
+<footer class="bg-dark text-white pt-5 pb-3 Amiri-font" id="footer">
+    <div class="container text-center text-md-end"> 
         <div class="row g-4">
             
-           
-            <div class="col-12 col-md-4 mb-4 mb-md-0">
+  
+            <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
                 <div class="footer-logo mb-3">
-                 
                     <img src="./assets/images/logo.jpg" alt="مفروشات القلعة" style="max-height: 60px;"> 
                 </div>
-                <p class="text-beige small lh-lg">
+                <p class="text-beige small lh-lg m-0">
                     مفروشات القلعة، حيث نجمع بين فخامة التصميم وجودة التنفيذ لنقدم لكم أجمل تشكيلات الأثاث المنزلي الذي يليق بذوقكم الرفيع. نسعى دائماً لتحويل منازلكم إلى قلاع من الراحة والأناقة.
                 </p>
             </div>
 
-        
+            
             <div class="col-6 col-md-2 offset-md-1">
-                <h5 class="fw-bold mb-3 text-gold text-main">روابط سريعة</h5>
-                <ul class="list-unstyled footer-links">
+                <h5 class="fw-bold mb-3 text-main">روابط سريعة</h5>
+                <ul class="list-unstyled p-0 m-0 footer-links">
                     <li><a href="#" class="text-beige text-decoration-none small py-1 d-block hover-gold">الرئيسية</a></li>
                     <li><a href="#" class="text-beige text-decoration-none small py-1 d-block hover-gold">من نحن؟</a></li>
                     <li><a href="#products" class="text-beige text-decoration-none small py-1 d-block hover-gold">أحدث التشكيلات</a></li>
@@ -247,53 +266,49 @@
                 </ul>
             </div>
 
-          
+        
             <div class="col-6 col-md-2">
-                <h5 class="fw-bold mb-3 text-gold text-main">الأقسام</h5>
-                <ul class="list-unstyled footer-links">
+                <h5 class="fw-bold mb-3 text-main">الأقسام</h5>
+                <ul class="list-unstyled p-0 m-0 footer-links">
                     <li><a href="#" class="text-beige text-decoration-none small py-1 d-block hover-gold">غرف نوم</a></li>
                     <li><a href="#" class="text-beige text-decoration-none small py-1 d-block hover-gold">صالونات</a></li>
                     <li><a href="#" class="text-beige text-decoration-none small py-1 d-block hover-gold">غرف سفرة</a></li>
-                    <li><a href="#" class="text-gold text-decoration-none small py-1 d-block hover-gold">ديكورات</a></li>
+                    <li><a href="#" class="text-beige text-decoration-none small py-1 d-block hover-gold">ديكورات</a></li>
                 </ul>
             </div>
 
-           
+         
             <div class="col-12 col-md-3">
-                <h5 class="fw-bold mb-3 text-gold text-main">تواصل معنا</h5>
-                <ul class="list-unstyled footer-contact text-beige small">
-                    <li class="d-flex align-items-center mb-2">
-                        <i class="bi bi-geo-alt-fill me-2 text-main"></i>
+                <h5 class="fw-bold mb-3 text-main">تواصل معنا</h5>
+                <ul class="list-unstyled p-0 m-0 footer-contact text-beige small">
+                    <li class="d-flex align-items-center justify-content-center justify-content-md-start mb-2">
+                        <i class="bi bi-geo-alt-fill ms-2 text-main"></i>
                         <span>الزرقاء، الأردن (بيرين)</span>
                     </li>
-                    <li class="d-flex align-items-center mb-2">
-                        <i class="bi bi-telephone-fill me-2 text-main"></i>
+                    <li class="d-flex align-items-center justify-content-center justify-content-md-start mb-2">
+                        <i class="bi bi-telephone-fill ms-2 text-main"></i>
                         <a href="tel:0788582137" class="text-beige text-decoration-none hover-gold">0788582137</a>
                     </li>
-                  
                 </ul>
           
-                <div class="d-flex gap-3 mt-3 justify-content-end footer-social">
+                <div class="d-flex gap-3 mt-3 justify-content-center justify-content-md-start footer-social">
                     <a href="https://www.facebook.com/share/19MUVx2AvR/?mibextid=wwXIfr" target="_blank" class="text-beige fs-5 hover-gold"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/saif_alhjouj" target="_blank" class="text-muted fs-5 hover-gold"><i class="fa-brands fa-instagram"></i></a>
-                 <a href="https://wa.me/962788582137?text=مرحبا%20مفروشات%20القلعة،%20حابب%20أستفسر" target="_blank" class="text-muted fs-5 hover-gold">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+                    <a href="https://www.instagram.com/saif_alhjouj" target="_blank" class="text-beige fs-5 hover-gold"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/962788582137?text=مرحبا%20مفروشات%20القلعة،%20حابب%20أستفسر" target="_blank" class="text-beige fs-5 hover-gold"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
 
         </div>
 
-     
+      
         <hr class="bg-secondary mt-5 mb-3 opacity-25">
         <div class="row">
             <div class="col-12 text-center small text-beige">
-                <p class="mb-0">جميع الحقوق محفوظة لدى مفروشات القلعة &copy; .</p>
+                <p class="mb-0">جميع الحقوق محفوظة لدى مفروشات القلعة &copy;.</p>
             </div>
         </div>
     </div>
 </footer>
-
 
 
 
