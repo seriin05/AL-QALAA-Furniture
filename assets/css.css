@@ -1,0 +1,314 @@
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Amiri\,Inter\,Playfair_Display.zip') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./fonts/Amiri\,Inter\,Playfair_Display.zip) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.Amiri-font {
+  font-family: 'Amiri', serif;
+  color: #2d5a35; 
+}
+
+
+.Playfair-font {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+body{
+    background-color:#453323;
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 15px 40px; 
+  box-sizing: border-box;
+}
+
+
+.al-qalaa-logo {
+  flex: 0 0 auto; 
+}
+
+.al-qalaa-logo img {
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex: 1;
+  list-style: none;
+  gap: 30px; 
+  margin: 0;
+  padding: 0;
+  margin-left: -50px; 
+}
+
+
+.nav-links a {
+    font-family: 'Amiri';
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #2d5a35 !important;
+}
+
+
+h1{font-family: 'Amiri';}
+p{font-family: 'Amiri';}
+
+
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+
+.animate-text {
+  animation: slideFromRight 1s ease-out forwards;
+}
+
+.animate-img {
+  animation: slideFromLeft 1s ease-out forwards;
+}
+
+
+
+@keyframes breathingImage {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.10); } 
+  100% { transform: scale(1); }
+}
+
+.animate-img img {
+  animation: breathingImage 8s ease-in-out infinite;
+}
+
+@keyframes productFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-product {
+  animation: productFadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.btn-success{background-color:#453323;}
+
+
+
+.sub-footer{
+display: flex !important;
+justify-content: space-between;
+align-items: flex-start;
+opacity: 1;
+padding-bottom: 90px;
+gap: 224px;
+max-width: 1152px;
+margin:0 auto;
+padding:0 20px;
+width:100% !important;
+box-sizing: border-box;
+margin-bottom: 90px !important;
+margin-top: 40px !important;
+}
+
+.footerr{background-color: #23563C;
+width:100%;
+height: auto;
+padding: 60px 0 20px 0;
+}
+
+.footer-col{flex:1;}
+
+.footer-col ul{
+  list-style: none;
+  padding: 0;
+  padding-left: 0 !important;
+  margin:0;
+}
+
+
+.footer-col ul li a{text-decoration: none;
+  color:#D1D5DC;color: #D1D5DC;
+text-align: center;
+font-family: 'Inter' , sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: -0.439px;}
+
+
+.cpyRight{box-sizing: border-box;
+  text-align: center;
+  background-color: #23563C;
+  color:#99A1AF;
+font-weight: 400;
+font-family: 'Inter' , sans-serif;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+width: 100%;
+height:  auto;
+opacity: 1;
+padding-top: 24px;
+padding-bottom:24px;
+border-top: 1px solid rgba(255,255,255,0.2);
+width:100%;
+margin: 0 auto;
+max-width: 1152px;
+}
+.footer-col p {color: #D1D5DC;color: #D1D5DC;
+font-family: 'Inter' , sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 29.25px; 
+letter-spacing: -0.439px;}
+.footer-col h3{color:#ffffff;
+color: #FFF;
+font-family: 'Inter' , sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; 
+letter-spacing: -0.449px;}
+.contact-item{color:#D1D5DC;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-family: 'Inter' , sans-serif;
+}
+.contact-item a {text-decoration: none;
+color: #D1D5DC;
+font-family: 'Inter' , sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.312px;}
+.footer-logo{height: 128px;
+flex-shrink: 0;
+align-self: stretch;
+margin-bottom: 16px;}
+.social-icons a{color: #ffffff;
+height: 24px;
+align-self: stretch;
+font-family: 'Inter' , sans-serif;}
+
+
+.social-icons{display: flex;
+align-items: center;
+margin-top:48px ;
+margin-left: 0 auto;
+gap:18px;}
+
+.social-icons a{color:#ffffff;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;}
+
+
+
+
+footer.bg-dark {
+    background-color:#453323!important; 
+}
+
+
+footer .text-main {
+    color: antiquewhite !important; 
+}
+
+
+footer a.hover-gold {
+    transition: color 0.3s ease;
+}
+
+footer a.hover-gold:hover {
+    color:antiquewhite !important; 
+    text-decoration: underline !important;
+}
+
+
+.footer-social a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: antiquewhite !important;
+    transform: translateY(-3px); 
+}
+
+
+footer .bi {
+    margin-left: 10px; 
+}
+
+
+.footer-logo img {
+   border-radius: 10px;
+   height: 200px;
+
+}
+
+
+footer a{color :antiquewhite !important;
+text-decoration: none;}
+
+footer p ,footer li ,footer span ,footer i ,footer ul{color :antiquewhite !important;}
