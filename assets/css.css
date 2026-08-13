@@ -27,6 +27,7 @@
 
 body{
     background-color:#453323;
+    font-family: 'Amiri';
 }
 
 
@@ -41,6 +42,7 @@ body{
 
 .al-qalaa-logo {
   flex: 0 0 auto; 
+  
 }
 
 .al-qalaa-logo img {
@@ -119,11 +121,12 @@ p{font-family: 'Amiri';}
 
 @keyframes breathingImage {
   0% { transform: scale(1); }
-  50% { transform: scale(1.10); } 
+  50% { transform: scale(1.08); } 
   100% { transform: scale(1); }
 }
 
 .animate-img img {
+    
   animation: breathingImage 8s ease-in-out infinite;
 }
 
@@ -312,3 +315,82 @@ footer a{color :antiquewhite !important;
 text-decoration: none;}
 
 footer p ,footer li ,footer span ,footer i ,footer ul{color :antiquewhite !important;}
+
+
+
+.nav-links .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f5f0eb !important; 
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-link:hover,
+.nav-links .nav-link.active {
+  color: #2d5a35 !important; 
+}
+
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+
+@media (max-width: 991px) {
+  .animate-img img {padding-top: 20px;}
+  .hero-img-container,
+  .hero-section .row > div:last-child {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+
+  .hero-section img {
+    margin: 0 auto !important;
+    display: block !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .animate-img img {padding-top: 50px;}
+  .hero-img-container,
+  .hero-section .row > div:last-child {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+
+  .hero-section img {
+    margin: 0 auto !important;
+    display: block !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+   footer .container {
+    text-align: center !important;
+  }
+  
+  footer .footer-social,
+  footer .footer-contact li {
+    justify-content: center !important;
+  }
+
+  footer .offset-md-1 {
+    margin-right: 0 !important;
+  }
+}
+
+
