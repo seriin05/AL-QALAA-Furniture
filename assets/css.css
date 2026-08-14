@@ -394,3 +394,66 @@ footer p ,footer li ,footer span ,footer i ,footer ul{color :antiquewhite !impor
 }
 
 
+
+.btn-whatsapp-order {
+  background-color: darkgreen;
+  color: #ffffff !important;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp-order:hover {
+  background-color: #1eb956;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp-order i {
+  color: #ffffff;
+}
+
+/* Testimonials Styling */
+.testimonials-section {
+  background-color: #fdfbf7; 
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border: 1px solid #f0e6d2;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+  border-color: #c5a059; 
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.avatar-circle {
+  width: 45px;
+  height: 45px;
+  background-color: #c5a059;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: #c5a059;
+  border-radius: 2px;
+}
+
